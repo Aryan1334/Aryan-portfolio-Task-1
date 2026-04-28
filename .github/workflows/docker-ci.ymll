@@ -17,7 +17,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_KEY }}
           script: |
-            docker pull yourusername/portfolio:latest
-            docker stop portfolio || true
-            docker rm portfolio || true
-            docker run -d -p 80:80 --name portfolio yourusername/portfolio:latests
+            sudo docker pull aryan1334/aryan-portfolio:latest
+            sudo docker stop portfolio || true
+            sudo docker rm portfolio || true
+            sudo docker run -d -p 80:80 --name portfolio aryan1334/aryan-portfolio:latest
